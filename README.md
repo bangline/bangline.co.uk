@@ -1,4 +1,4 @@
->_ Bangline Website
+\>_ Bangline Website
 ===================
 
 Re-implentation of the bangline.co.uk site using [middleman](https://middlemanapp.com/). Really just kicking the tyres again since using other static site generators.
