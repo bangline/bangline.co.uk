@@ -1,0 +1,186 @@
+/* Rose:       #B85365 */
+/* Lavendar:   #90839F */
+/* Lilac:      #979CC2 */
+/* Baby Blue:  #8FB4C7 */
+/* White:      #D9E8FD */
+/* Snow:       snow    */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #414142;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quattrocento', serif;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #B85365;
+}
+
+a:hover {
+  color: #979CC2;
+}
+
+figure {
+  margin: 0 0 2em;
+}
+
+header {
+  padding: 1em 1em 0;
+  border-bottom: 3px solid transparent;
+}
+
+header nav {
+  margin-top: 2em;
+}
+
+header.blue {
+  background: #8FB4C7;
+  border-bottom: 3px solid #7FA4B7;
+}
+
+#logo {
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 1em auto;
+}
+
+main > .content {
+  margin-top: 3em;
+}
+
+main > .content:first-child {
+  margin-top: 0;
+}
+
+main > .content:last-child {
+  margin-bottom: 3em;
+}
+
+footer {
+  border-top: 3px solid #818182;
+  padding: .5em 0 .8em;
+  background: #414142;
+  color: snow;
+}
+
+footer > .content {
+  margin: 0 auto;
+}
+
+footer ul {
+  margin: .5em 0;
+}
+
+footer li {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #B85365;
+}
+
+footer a:hover {
+  color: snow;
+}
+
+.ul-no-style {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-inline > li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.nav > li > a {
+  display: block;
+  text-decoration: none;
+}
+
+.timestamp {
+  margin-right: 1em;
+  width: 90px;
+  display: inline-block;
+}
+
+.button {
+  padding: .5em 1em;
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Thanks to http://blog.41studio.com/embed-responsive-youtube-video-in-rails-4/ */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 630px) {
+  .content {
+    max-width: 300px;
+    padding: 1em 1em 0;
+    margin: 0 auto;
+  }
+
+  main > .content {
+    margin-top: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .content img {
+    max-width: 100%;
+  }
+
+  .timestamp {
+    display: block;
+    font-size: 0.7em;
+    margin-bottom: 3px;
+  }
+
+  ul.index-list li {
+    margin-bottom: 1.5em;
+  }
+}
+

@@ -1,0 +1,59 @@
+<div class="content">
+  <h2>Journal</h2>
+  <ul class="index-list ul-no-style nav">
+    <% blog("journal").articles[0...10].each do |article| %>
+      <li>
+        <% link_to article do %>
+          <time class="timestamp"><%= article.date.strftime('%F') %></time>
+          <%= article.title %>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+  <%# <% if blog("journal").articles.count > 10 %1> %>
+  <%#   <nav> %>
+  <%#     <a href="#" class="button">More</a> %>
+  <%#   </nav> %>
+  <%# <% end %1> %>
+</div>
+<div class="content">
+  <h2>Articles</h2>
+  <ul class="index-list ul-no-style nav">
+    <% blog("articles").articles[0...10].each do |article| %>
+      <li>
+        <% link_to article do %>
+          <%= article.title %>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+  <%# <nav> %>
+  <%#   <a href="#" class="button">More</a> %>
+  <%# </nav> %>
+</div>
+<div class="content">
+  <h2>Talks</h2>
+  <ul class="index-list ul-no-style nav">
+    <% data.talks.each do |talk| %>
+      <li>
+        <%= link_to talk.title, "/talks/#{talk.title.to_slug}.html" %>
+      </li>
+    <% end %>
+  </ul>
+  <%# <nav> %>
+  <%#   <a href="#" class="button">More</a> %>
+  <%# </nav> %>
+</div>
+<div class="content">
+  <h2>Elsewhere</h2>
+  <ul class="index-list ul-no-style nav">
+    <% data.others.each do |other| %>
+      <li>
+      <% link_to other.url do %>
+        <time class="timestamp"><%= other.date.strftime('%F') %></time>
+        <%= other.title %>
+      <% end %>
+      </li>
+    <% end %>
+  </ul>
+</div>
